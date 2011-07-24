@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import glob
 import os
-current_dir = os.path.dirname(__file__)
+current_dir = os.path.abspath(os.path.dirname(__file__))
 for config in glob.glob("_*"):
     target = os.path.expanduser("~/.%s" % config.lstrip("_"))
     if os.path.lexists(target):
