@@ -2,6 +2,8 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/vcs/git/oh-my-zsh
 
+DISABLE_AUTO_UPDATES="true"
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -33,12 +35,14 @@ unsetopt correct_all
 export EDITOR=vim
 export SVN_EDITOR=vim
 unsetopt cdablevars
+alias serve="python -mSimpleHTTPServer"
 alias pylab="ipython -pylab"
 alias g='g++'
 alias gg='g++ -g'
 alias ga='gdb ./a.out'
 alias a='./a.out'
 alias go='gnome-open'
+alias sudo='sudo env PATH=$PATH'
 setopt hist_ignore_space # trick so that history doesn't get polluted
 function edithist() {
 	local tmp=${TMPPREFIX}${$}hist
@@ -52,6 +56,10 @@ bindkey -e -s '\C-z' '\M-qedithist\n'
 export WORKON_HOME=~/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 
+# ADDITIONAL PATHS
+export PATH=$PATH:/opt/node/bin/ # node.js
+
+
 # MACROS?
 cdgit() {
 	cd ~/vcs/git/$1
@@ -60,3 +68,4 @@ function collapse_pwd {
     echo $(pwd | sed -e "s,^$HOME,~,")
 }
 PROMPT='[%*] %{$fg[cyan]%}%n%{$reset_color%}:%{$fg[green]%}$(collapse_pwd)%{$reset_color%}$(git_prompt_info) %(!.#.$) '
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function

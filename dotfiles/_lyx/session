@@ -2,94 +2,43 @@
 ## Editing this file manually may cause lyx to crash.
 
 [recent files]
-/home/jongman/book/chapter-graph-mst.lyx
-/home/jongman/book/chapter-shortest-path.lyx
-/home/jongman/book/book.lyx
-/home/jongman/book/chapter-graph-bfs.lyx
-/home/jongman/book/chapter-graph-dfs.lyx
-/home/jongman/book/chapter-numbertheory.lyx
-/home/jongman/book/chapter-dynamic-programming.lyx
-/home/jongman/book/chapter-numeric.lyx
-/home/jongman/book/chapter-problem-solving.lyx
-/home/jongman/book/chapter-numeric2.lyx
-/home/jongman/book/tmp.lyx
-/home/jongman/book/chapter-divide-and-conquer.lyx
-/home/jongman/book/chapter-bisection.lyx
-/home/jongman/book/chapter-combinatorial-search.lyx
-/home/jongman/book/c2.lyx
-/home/jongman/book/chapter-bruteforce.lyx
-/home/jongman/book/chapter-greedy.lyx
-/home/jongman/book/part-intro-to-problem-solving.lyx
-/home/jongman/book/part-intro-to-problem-solving-alt.lyx
-/home/jongman/book/part-graphs.lyx
+/home/jongman/vcs/git/book/chapter-network-flow.lyx
+/home/jongman/vcs/git/book/book.lyx
+/home/jongman/vcs/svn/problems/problems/367.RunRun/problem.lyx
+/home/jongman/vcs/svn/problems/problems/tmp/problem.lyx
+/home/jongman/vcs/git/book/chapter-graph-impl.lyx
+/home/jongman/vcs/git/book/chapter-graph-dfs.lyx
+/home/jongman/vcs/git/book/chapter-segment-trees.lyx
+/home/jongman/vcs/git/book/chapter-graph-mst.lyx
+/home/jongman/vcs/git/book/chapter-geometry.lyx
 
 [last opened files]
-1, /home/jongman/book/chapter-graph-mst.lyx
+1, /home/jongman/vcs/git/book/chapter-network-flow.lyx
 
 [cursor positions]
-0, 0, /home/jongman/book/book.lyx
-55, 273, /home/jongman/book/c2.lyx
-119, 0, /home/jongman/book/chapter-binary-search-tree.lyx
-81, 179, /home/jongman/book/chapter-bisection.lyx
-71, 181, /home/jongman/book/chapter-bitmask.lyx
-202, 129, /home/jongman/book/chapter-bruteforce.lyx
-107, 288, /home/jongman/book/chapter-coding.lyx
-92, 34, /home/jongman/book/chapter-combinatorial-search.lyx
-0, 0, /home/jongman/book/chapter-disjoint-sets.lyx
-197, 258, /home/jongman/book/chapter-divide-and-conquer.lyx
-601, 0, /home/jongman/book/chapter-dynamic-programming-techniques.lyx
-366, 389, /home/jongman/book/chapter-dynamic-programming.lyx
-0, 0, /home/jongman/book/chapter-fenwick-tree.lyx
-0, 0, /home/jongman/book/chapter-geometry.lyx
-0, 0, /home/jongman/book/chapter-graph-bfs.lyx
-0, 0, /home/jongman/book/chapter-graph-dfs.lyx
-46, 102, /home/jongman/book/chapter-graph-impl.lyx
-64, 36, /home/jongman/book/chapter-graph-mst.lyx
-256, 127, /home/jongman/book/chapter-graph-search.lyx
-0, 0, /home/jongman/book/chapter-greedy.lyx
-73, 0, /home/jongman/book/chapter-linear-data-structures.lyx
-130, 202, /home/jongman/book/chapter-numbertheory.lyx
-149, 123, /home/jongman/book/chapter-numeric.lyx
-54, 10, /home/jongman/book/chapter-numeric2.lyx
-52, 0, /home/jongman/book/chapter-partial-sums.lyx
-55, 83, /home/jongman/book/chapter-priority-queue.lyx
-128, 24, /home/jongman/book/chapter-problem-solving.lyx
-0, 0, /home/jongman/book/chapter-programming-contests.lyx
-0, 0, /home/jongman/book/chapter-proof.lyx
-117, 86, /home/jongman/book/chapter-segment-trees.lyx
-348, 0, /home/jongman/book/chapter-shortest-path.lyx
-0, 0, /home/jongman/book/chapter-special-graphs.lyx
-71, 0, /home/jongman/book/chapter-stack-queue.lyx
-105, 0, /home/jongman/book/chapter-string-trees.lyx
-0, 0, /home/jongman/book/chapter-strings.lyx
-43, 0, /home/jongman/book/chapter-time-complexity.lyx
-0, 0, /home/jongman/book/chapter-tree-impl.lyx
-1, 0, /home/jongman/book/part-algorithm-design-paradigm.lyx
-0, 0, /home/jongman/book/part-algorithms.lyx
-0, 0, /home/jongman/book/part-basic-data-structures.lyx
-0, 0, /home/jongman/book/part-famous-algorithms.lyx
-0, 0, /home/jongman/book/part-graphs.lyx
-0, 0, /home/jongman/book/part-intro-to-problem-solving.lyx
-0, 0, /home/jongman/book/part-trees.lyx
-23, 10, /home/jongman/book/tmp.lyx
-0, 0, /home/jongman/git/book2/chapter-geometry.lyx
-0, 11, /home/jongman/incoming/newfile2.lyx
-0, 0, /home/jongman/incoming/sample.lyx
-313, 0, /home/jongman/svn/algospot2nd/algospot2nd.lyx
-0, 18, /home/jongman/tmp2/newfile1.lyx
-24, 132, /home/jongman/ww/problems/jmdpcontest.lyx
-0, 0, /home/jongman/ww/problems/problems.lyx
-21, 126, /home/jongman/ww/school/gametheory/lecture.lyx
-15, 85, /home/jongman/ww/school/hull/cheatsheet.lyx
-45, 3, /home/jongman/ww/school/hull/hw2.lyx
-136, 269, /home/jongman/ww/school/hull/lecture.lyx
-90, 0, /home/jongman/ww/school/hull/midterm/midterm.lyx
-61, 9, /home/jongman/ww/school/natenberg/ch4.lyx
-0, 0, /tmp/lyx_tmpdir.MT9449.SL9449_embedded.internal
-0, 0, /tmp/lyx_tmpdir.MT9449.hX9449_embedded.internal
+11, 0, /home/jongman/vcs/git/book/book.lyx
+0, 0, /home/jongman/vcs/git/book/chapter-bruteforce.lyx
+95, 46, /home/jongman/vcs/git/book/chapter-disjoint-sets.lyx
+0, 0, /home/jongman/vcs/git/book/chapter-geometry.lyx
+0, 0, /home/jongman/vcs/git/book/chapter-graph-bfs.lyx
+279, 206, /home/jongman/vcs/git/book/chapter-graph-dfs.lyx
+0, 0, /home/jongman/vcs/git/book/chapter-graph-impl.lyx
+40, 0, /home/jongman/vcs/git/book/chapter-graph-mst.lyx
+19, 0, /home/jongman/vcs/git/book/chapter-greedy.lyx
+120, 3, /home/jongman/vcs/git/book/chapter-network-flow.lyx
+44, 0, /home/jongman/vcs/git/book/chapter-priority-queue.lyx
+67, 0, /home/jongman/vcs/git/book/chapter-segment-trees.lyx
+0, 0, /home/jongman/vcs/git/book/chapter-shortest-path.lyx
+0, 0, /home/jongman/vcs/git/book/chapter-string-trees.lyx
+0, 0, /home/jongman/vcs/git/book/chapter-tree-impl.lyx
+0, 0, /home/jongman/vcs/git/book/part-graphs.lyx
+5, 21, /home/jongman/vcs/svn/problems/problems/367.RunRun/problem.lyx
+10, 0, /home/jongman/vcs/svn/problems/problems/tmp/problem.lyx
+0, 0, /tmp/lyx_tmpdir.J30619.M30619_embedded.internal
+0, 0, /tmp/lyx_tmpdir.J30619.X30619_embedded.internal
 0, 0, /usr/share/lyx/examples/splash.lyx
 
 [last commands]
 
 [bookmarks]
-0, 64, 5, /home/jongman/book/chapter-graph-mst.lyx
+0, 120, 1, /home/jongman/vcs/git/book/chapter-network-flow.lyx

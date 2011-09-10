@@ -1,4 +1,4 @@
-# LyX 2.0.0rc2 generated this file. If you want to make your own
+# LyX 2.0.0rc3 generated this file. If you want to make your own
 # modifications you should do them from inside LyX and save.
 
 Format 1
@@ -16,9 +16,9 @@ Format 1
 #
 
 \screen_zoom 140
-\screen_font_roman "Serif"
-\screen_font_sans "나눔고딕"
-\screen_font_typewriter "나눔고딕코딩"
+\screen_font_roman "UnBatang"
+\screen_font_sans "Liberation Sans"
+\screen_font_typewriter "DejaVu Sans Mono"
 \screen_font_sizes 5 7 8 9 10 12 14.4 17.260000000000002 20.739999999999998 24.879999999999999
 \single_instance false
 
