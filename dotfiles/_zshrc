@@ -72,3 +72,5 @@ PROMPT='[%*] %{$fg[cyan]%}%n%{$reset_color%}:%{$fg[green]%}$(collapse_pwd)%{$res
 [ -s "/home/jongman/.scm_breeze/scm_breeze.sh" ] && source "/home/jongman/.scm_breeze/scm_breeze.sh"
 alias gcv='git commit -v'
 alias ack='ack-grep'
+alias gpush='git push origin master'
+alias gpull='git pull origin master'
