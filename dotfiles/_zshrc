@@ -41,7 +41,7 @@ alias g='g++'
 alias gg='g++ -g'
 alias ga='gdb ./a.out'
 alias a='./a.out'
-alias go='gnome-open'
+alias go='gvfs-open'
 alias sudo='sudo env PATH=$PATH'
 setopt hist_ignore_space # trick so that history doesn't get polluted
 function edithist() {
@@ -53,8 +53,8 @@ function edithist() {
 }
 bindkey -e '\M-q' push-input # replaces push-line in 3.0.x
 bindkey -e -s '\C-z' '\M-qedithist\n'
-export WORKON_HOME=~/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+#export WORKON_HOME=~/.virtualenvs
+#source /usr/local/bin/virtualenvwrapper.sh
 
 # ADDITIONAL PATHS
 export PATH=$PATH:/opt/node/bin/ # node.js
@@ -74,3 +74,10 @@ alias gcv='git commit -v'
 alias ack='ack-grep'
 alias gpush='git push origin master'
 alias gpull='git pull origin master'
+source ~/git/z/z.sh
+set -o vi 
+alias notebook='ipython notebook --pylab=inline'
+bindkey "^R" history-incremental-search-backward
+alias tunnel='ssh -D 12345 jmk.pe.kr'
+alias matlab='/usr/local/MATLAB/R2013b/bin/matlab'
+alias pd='synclient PalmDetect=1'

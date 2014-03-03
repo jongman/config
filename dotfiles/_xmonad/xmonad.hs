@@ -29,10 +29,8 @@ main = xmonad $ gnomeConfig
     [ ("M-S-q", spawn "gnome-session-save --gui --logout-dialog") -- display logout-dialog
     -- Lock Screen
     , ("M-S-l", spawn "gnome-screensaver-command -l")
-    , ("M-p", spawn "kupfer")
-    , ("<XF86Forward>", nextWS)
-    , ("<XF86Back>", prevWS)
-    , ("M1-<Tab>", windows W.focusDown)
-    , ("M-<R>", nextScreen)
-    , ("M-<L>", prevScreen)
+    , ("M-<R>", nextWS)
+    , ("M-<L>", prevWS)
+    , ("M-S-<R>", shiftToNext >> nextWS)
+    , ("M-S-<L>", shiftToPrev >> prevWS)
     ]
