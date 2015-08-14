@@ -1,2 +1,0 @@
-/usr/share/gnome-session/sessions/xmonad.session
-/usr/share/xsessions/xmonad.desktop
