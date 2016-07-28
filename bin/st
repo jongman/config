@@ -1,8 +1,0 @@
-#!/bin/bash
-mkdir -p $1
-cp ~/bin/t.cpp $1/$1.cpp
-echo "all:" > $1/Makefile
-echo -e "\tg++ -g $1.cpp" >> $1/Makefile
-echo "opt:" >> $1/Makefile
-echo -e "\tg++ -O3 $1.cpp" >> $1/Makefile
-
