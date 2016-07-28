@@ -16,7 +16,7 @@ setopt hist_ignore_space
 
 # exports
 export PATH=~/bin:/usr/local/bin:/Library/TeX/texbin:$PATH
-#export TERM='xterm-256color'
+export TERM='xterm-256color'
 export EDITOR=vim
 alias a='./a.out'
 
