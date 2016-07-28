@@ -1,0 +1,55 @@
+# oh-my-zsh stuff
+DISABLE_AUTO_UPDATE="true"
+ZSH=$HOME/git/oh-my-zsh
+ZSH_THEME="geoffgarside"
+plugins=(git mercurial)
+
+# source stuff
+source $ZSH/oh-my-zsh.sh
+source ~/git/z/z.sh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# some zsh options
+unsetopt correct_all
+unsetopt cdablevars
+setopt hist_ignore_space
+
+# exports
+export PATH=~/bin:/usr/local/bin:/Library/TeX/texbin:$PATH
+#export TERM='xterm-256color'
+export EDITOR=vim
+alias a='./a.out'
+
+# line editor
+bindkey -v
+bindkey "^R" history-incremental-search-backward
+bindkey "^r" history-incremental-search-backward
+bindkey "^P" up-history
+bindkey "^N" down-history
+bindkey "^w" backward-kill-word
+bindkey '^[OH' beginning-of-line
+bindkey '^[OF' end-of-line
+
+function zle-inline-init zle-keymap-select {
+	VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
+	RPS="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/} $EPS1"
+	zle reset-prompt
+}
+zle -N zle-line-init
+zle -N zle-keymap-select
+export KEYTIMEOUT=1
+
+# prompt
+HOSTNAME=`hostname`
+PROMPT='[%*] %{$fg[yellow]%}$HOSTNAME:%{$fg[green]%}%~%{$reset_color%} %(!.#.$) '
+
+# aliases
+alias reload='source ~/.zshrc'
+
+# simple bookmark system
+export MARKPATH=$HOME/shortcuts
+function go { cd -P "$MARKPATH/$1" 2> /dev/null || echo "No such mark: $1" }
+function mark { mkdir -p "$MARKPATH"; ln -s "$(pwd)" "$MARKPATH/$1" }
+function unmark { rm -i "$MARKPATH/$1" }
+function marks { ls -l "$MARKPATH" | sed 's/  / /g' | cut -d' ' -f9- && echo }
+
