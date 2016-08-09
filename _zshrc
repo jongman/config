@@ -8,6 +8,7 @@ plugins=(git mercurial)
 source $ZSH/oh-my-zsh.sh
 source ~/git/z/z.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
 
 # some zsh options
 unsetopt correct_all
@@ -41,10 +42,11 @@ export KEYTIMEOUT=1
 
 # prompt
 HOSTNAME=`hostname`
-PROMPT='[%*] %{$fg[yellow]%}$HOSTNAME:%{$fg[green]%}%~%{$reset_color%} %(!.#.$) '
+PROMPT='[%*] %{$fg[green]%}$HOSTNAME:%{$fg[yellow]%}%~%{$reset_color%} %(!.#.$) '
 
 # aliases
 alias reload='source ~/.zshrc'
+alias vag='vagrant'
 
 # simple bookmark system
 export MARKPATH=$HOME/shortcuts
