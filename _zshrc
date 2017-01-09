@@ -1,12 +1,12 @@
 # oh-my-zsh stuff
 DISABLE_AUTO_UPDATE="true"
-ZSH=$HOME/git/oh-my-zsh
+ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="geoffgarside"
 plugins=(git mercurial)
 
 # source stuff
 source $ZSH/oh-my-zsh.sh
-source ~/git/z/z.sh
+source ~/.z/z.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
 
