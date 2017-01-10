@@ -6,7 +6,7 @@ plugins=(git mercurial)
 
 # source stuff
 source $ZSH/oh-my-zsh.sh
-source ~/.z/z.sh
+source ~/.z.sh/z.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
 

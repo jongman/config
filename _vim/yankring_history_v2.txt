@@ -1,2 +1,15 @@
-$,v
+playbook.yml,v
+# Check to determine whether we're on a windows or linux/os-x host,# later on we use this to launch ansible in the supported way# source: https://stackoverflow.com/questions/2108727/which-in-ruby-checking-if-program-exists-in-path-from-rubydef which(cmd)    exts = ENV['PATHEXT'] ? ENV['PATHEXT'].split(';') : ['']    ENV['PATH'].split(File::PATH_SEPARATOR).each do |path|        exts.each { |ext|            exe = File.join(path, "#{cmd}#{ext}")            return exe if File.executable? exe        }    end    return nilend,V
+ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA6NF8iallvQVp22WDkTkyrtvp9eWW6A8YVr+kz4TjGYe7gHzIw+niNltGEFHzD8+v1I2YJ6oXevct1YeS0o9HZyN1Q9qgCgzUFtdOKLv6IedplqoPkcmF0aYet2PkEDo3MlTBckFXPITAMzF8dJSIFo9D8HfdOV0IAdx4O7PtixWKn5y2hMNG0zQPyUecp4pzC6kivAIhyfHilFR61RGL+GPXQ2MWZWFYbAGjyiYJnAmCP3NOTd0jMZEnDkbUvxhMmBYSdETk1rRgm+R4LOzFUGaHqHDLKLX+FIPKcF96hrucXzcWyLbIbEgE98OHlnVYCzRdK8jlqm8tehUc9c9WhQ== vagrant insecure public key,V
+cp /vagrant/ansible/inventories/dev /etc/ansible/hosts -f,V
+[phansible-web]192.168.33.99,V
+	config.vm.provision "ansible" do |ansible|		ansible.galaxy_role_file = "ansible/roles.txt"		ansible.playbook = "ansible/dev.playbook"		ansible.verbose = 'v'	end,V
+",v
+[,v
+whinii.com,v
+			ansible.playbook = "ansible/dev.yml"			ansible.inventory_path = "ansible/inventories/dev"			ansible.limit = 'all',V
+		ansible.galaxy_role_file = "ansible/roles.txt"		ansible.playbook = "ansible/dev.playbook"		ansible.verbose = 'v',V
+playbook,v
+    # If ansible is in your path it will provision from your HOST machine    # If ansible is not found in the path it will be instaled in the VM and provisioned from there    if which('ansible-playbook')        config.vm.provision "ansible" do |ansible|            ansible.playbook = "ansible/playbook.yml"            ansible.inventory_path = "ansible/inventories/dev"            ansible.limit = 'all'        end    else        config.vm.provision :shell, path: "ansible/windows.sh", args: ["whinii.com"]    end,V
 /,v
+$,v

@@ -2,5 +2,5 @@
 	path = _oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
 [submodule "_z"]
-	path = _z
+	path = _z.sh
 	url = https://github.com/rupa/z.git
