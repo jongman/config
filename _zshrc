@@ -1,4 +1,6 @@
 # oh-my-zsh stuff
+unsetopt BG_NICE
+export DISPLAY=:0
 DISABLE_AUTO_UPDATE="true"
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="geoffgarside"
@@ -6,7 +8,7 @@ plugins=(git mercurial)
 
 # source stuff
 source $ZSH/oh-my-zsh.sh
-source ~/.z.sh/z.sh
+# source ~/.z.sh/z.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
 
@@ -16,7 +18,8 @@ unsetopt cdablevars
 setopt hist_ignore_space
 
 # exports
-export PATH=~/bin:/usr/local/bin:/Library/TeX/texbin:$PATH
+export GOPATH=/home/jongman/go
+export PATH=~/bin:~/.conda/envs/env/bin:/usr/local/bin:/Library/TeX/texbin:/usr/local/go/bin:~/miniconda3/bin:$PATH:$GOPATH/bin
 export TERM='xterm-256color'
 export EDITOR=vim
 alias a='./a.out'
@@ -50,8 +53,39 @@ alias vag='vagrant'
 
 # simple bookmark system
 export MARKPATH=$HOME/shortcuts
-function go { cd -P "$MARKPATH/$1" 2> /dev/null || echo "No such mark: $1" }
+function g { cd -P "$MARKPATH/$1" 2> /dev/null || echo "No such mark: $1" }
 function mark { mkdir -p "$MARKPATH"; ln -s "$(pwd)" "$MARKPATH/$1" }
 function unmark { rm -i "$MARKPATH/$1" }
 function marks { ls -l "$MARKPATH" | sed 's/  / /g' | cut -d' ' -f9- && echo }
 
+# added by Miniconda3 installer
+# export PATH="$PATH:/home/jongman/miniconda3/bin"
+export PATH="$PATH:/home/jongman/miniconda3/envs/env/bin"
+
+# Set up ssh-agent
+SSH_ENV="$HOME/.ssh/environment"
+
+function start_agent {
+	echo "Initializing new SSH agent..."
+	touch $SSH_ENV
+	chmod 600 "${SSH_ENV}"
+	/usr/bin/ssh-agent | sed 's/^echo/#echo/' >> "${SSH_ENV}"
+	. "${SSH_ENV}" > /dev/null
+	/usr/bin/ssh-add
+}
+
+# Source SSH settings, if applicable
+if [ -f "${SSH_ENV}" ]; then
+	. "${SSH_ENV}" > /dev/null
+	kill -0 $SSH_AGENT_PID 2>/dev/null || {
+	start_agent
+}
+else
+ start_agent
+fi
+ 
+# export TERM=screen-256color
+
+alias ag=ack-grep
+export LC_ALL=en_US.utf8
+alias sae='source activate env'
